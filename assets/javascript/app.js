@@ -22,10 +22,10 @@ database.ref().on("child_added", function(childSnap) {
     var min = childSnap.val().min;
     var next = childSnap.val().next;
 
-    $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + next + "</td><td>" + min + "</td></tr>");
+    $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + firstTrain + "</td><td>" + frequency + "</td><td>" + next + "</td><td>" + min + "</td></tr>");
 });
 
-database.ref().on("value", function(snapshot) {
+database.ref().on("value", function() {
    
 
 });
